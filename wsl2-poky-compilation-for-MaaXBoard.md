@@ -12,12 +12,17 @@ The README.md file has enough content to create a bootable image on a Linux host
 This document provides some tips and tricks when you want to run BitBake tasks without issue.
 You should have wsl 2 enabled and Ubuntu 20.04.05 running.
 You will be able to your ubuntu with this command:
+```console
 wsl -d ubuntu-20.04
+```
 
 1-)You should be sure that you have enough RAM resource available to the WSL 2 in .wslconfig file, for example:
+
+```console
   [wsl2]
 
   memory=5GB
+```
   
   Note: WSL2 uses half of your RAM as maximum available RAM to the Linux distribution and half of the maximum available RAM as Swap.
   If you have 8GB of RAM you will have 4GB maximum RAM and 2GB Swap available to the ubuntu.
@@ -35,7 +40,9 @@ wsl -d ubuntu-20.04
   
 2-)Inside the ubuntu, you should make sure that the dns resolution works well.
 
+  ```console
   sudo vi /etc/resolv.conf
+  ```
   
   and edit the nameserver as 8.8.8.8
 
