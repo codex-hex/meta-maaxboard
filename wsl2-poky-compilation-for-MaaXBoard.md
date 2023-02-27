@@ -11,7 +11,8 @@ Writer: Osman
 The README.md file has enough content to create a bootable image on a Linux host.
 This document provides some tips and tricks when you want to run BitBake tasks without issue.
 You should have wsl 2 enabled and Ubuntu 20.04.05 running.
-You can run your ubuntu with this command: wsl -d ubuntu-20.04
+You will be able to your ubuntu with this command:
+wsl -d ubuntu-20.04
 
 1-)You should be sure that you have enough RAM resource available to the WSL 2 in .wslconfig file, for example:
   [wsl2]
